@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ukázka formulářů</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="forms-page">
+        <nav class="top-nav" aria-label="Hlavní navigace">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </nav>
+
+        <main class="forms-content">
+            <h1>Ukázka formulářových prvků</h1>
+            <p class="disabled-note">Tento formulář je pouze ukázkový a není funkční.</p>
+            <form class="demo-form" action="#" method="post">
+                <fieldset>
+                    <legend>Osobní údaje</legend>
+                    <label for="name">Jméno a příjmení</label>
+                    <input id="name" type="text" name="name" placeholder="Jan Novák">
+
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="jan@example.com">
+
+                    <label for="password">Heslo</label>
+                    <input id="password" type="password" name="password">
+
+                    <label for="birthday">Datum narození</label>
+                    <input id="birthday" type="date" name="birthday">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preference</legend>
+                    <label for="color">Oblíbená barva</label>
+                    <input id="color" type="color" name="color" value="#4285f4">
+
+                    <label for="study">Obor</label>
+                    <select id="study" name="study">
+                        <option value="">Vyberte obor</option>
+                        <option value="web">Web development</option>
+                        <option value="design">Design</option>
+                        <option value="data">Data</option>
+                    </select>
+
+                    <span class="form-label">Úroveň zkušeností</span>
+                    <label class="choice"><input type="radio" name="level" value="beginner"> Začátečník</label>
+                    <label class="choice"><input type="radio" name="level" value="advanced"> Pokročilý</label>
+
+                    <span class="form-label">Technologie</span>
+                    <label class="choice"><input type="checkbox" name="technology" value="html"> HTML</label>
+                    <label class="choice"><input type="checkbox" name="technology" value="css"> CSS</label>
+                    <label class="choice"><input type="checkbox" name="technology" value="javascript"> JavaScript</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Další informace</legend>
+                    <label for="website">Webová stránka</label>
+                    <input id="website" type="url" name="website" placeholder="https://">
+
+                    <label for="quantity">Počet projektů</label>
+                    <input id="quantity" type="number" name="quantity" min="0" max="100">
+
+                    <label for="satisfaction">Spokojenost</label>
+                    <input id="satisfaction" type="range" name="satisfaction" min="0" max="10" value="5">
+
+                    <label for="message">Zpráva</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Napište zprávu..."></textarea>
+
+                    <label for="attachment">Příloha</label>
+                    <input id="attachment" type="file" name="attachment">
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Odeslat</button>
+                    <button type="reset">Vymazat</button>
+                    <input type="button" value="Neaktivní tlačítko">
+                </div>
+            </form>
+        </main>
+
+        <footer class="site-footer">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjakub-halfar.github.io%2Fgooglesearch%2Fforms.html">Validace HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjakub-halfar.github.io%2Fgooglesearch%2Fstyles.css">Validace CSS</a>
+            <a href="https://github.com/Jakub-Halfar/googlesearch/blob/main/citace.md">Citace a zdroje</a>
+            <a href="https://github.com/Jakub-Halfar">Portfolio</a>
+        </footer>
+    </body>
+</html>
