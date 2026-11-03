@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ukázka formulářů</title>
+        <title>Ukázka formulářů - vzdělávací demo</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="forms-page">
@@ -15,8 +15,8 @@
 
         <main class="forms-content">
             <h1>Ukázka formulářových prvků</h1>
-            <p class="disabled-note">Tento formulář je pouze ukázkový a není funkční.</p>
-            <form class="demo-form" action="#" method="post">
+            <p class="disabled-note">Toto je pouze vzdělávací ukázka formulářových prvků. Údaje se nikam neodesílají ani neukládají.</p>
+            <form class="demo-form" action="#" method="post" autocomplete="off" onsubmit="return false;">
                 <fieldset>
                     <legend>Osobní údaje</legend>
                     <label for="name">Jméno a příjmení</label>
@@ -24,9 +24,6 @@
 
                     <label for="email">E-mail</label>
                     <input id="email" type="email" name="email" placeholder="jan@example.com">
-
-                    <label for="password">Heslo</label>
-                    <input id="password" type="password" name="password">
 
                     <label for="birthday">Datum narození</label>
                     <input id="birthday" type="date" name="birthday">
@@ -74,7 +71,7 @@
                 </fieldset>
 
                 <div class="form-actions">
-                    <button type="submit">Odeslat</button>
+                    <button type="button">Odeslat</button>
                     <button type="reset">Vymazat</button>
                     <input type="button" value="Neaktivní tlačítko">
                 </div>
